@@ -1,3 +1,8 @@
+Nama Anggota Kelompok B:
+1. Fathan al akbar
+2. Nur Widodo
+3. Muh reizal al asyhari
+
 Algoritma: membuat bola terurut
 Langkah-langkahnya
 1. Masukkan tangan ke salah satu sisi kotak yang terdapat lubang
