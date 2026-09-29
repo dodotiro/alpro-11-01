@@ -1,3 +1,8 @@
+Nama Anggota Kelompok B:
+1. Fathan al akbar
+2. Nur Widodo
+3. Muh reizal al asyhari
+
 Algoritma: membuat bola terberat
 Langkah-langkahnya
 1. Ambil 1 bola dan taruh di 1 sisi timbangan

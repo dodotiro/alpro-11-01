@@ -1,81 +1,68 @@
-# <h1 align="center">Laporan Praktikum Modul [Nomor Modul] - [Judul Modul/Topik]</h1>
-<p align="center">[Nama Praktikan] - [NIM]</p>
+# <h1 align="center">Laporan Praktikum Modul 02 - Algoritma dan Pemrograman Variabel, Tipe Data, dan Operasi</h1>
+<p align="center">Nur Widodo - 109092630005O</p>
 
 ## Dasar Teori
 
-### A. [Judul Topik Dasar Teori 1, misal: Bahasa Pemrograman Go]
-[Tuliskan penjelasan teori terkait topik ini. Sertakan kutipan/rujukan jika perlu, contoh: Menurut [Nama Penulis] ([Tahun]), ...]
+### A. Bahasa Pemrograman Go
+Menurut Donovan & Kernighan (2015), Go (atau Golang) adalah bahasa pemrograman open-source yang dirancang untuk memudahkan pembangunan perangkat lunak yang sederhana, cepat, dan handal. Go menyediakan dukungan bawaan untuk konkurensi serta sistem tipe data yang statis namun fleksibel, sehingga sangat cocok digunakan untuk pengembangan aplikasi sistem maupun komputasi modern.
 
-### B. [Judul Topik Dasar Teori 2, misal: Package dan Struktur Program di Go]
+### B. Variabel, Tipe Data, dan Operator Aritmatika di Go
 
-#### 1. [Judul Sub-topik 1, misal: Pengertian Package main dan func main()]
-[Penjelasan sub-topik 1]
+#### 1. Deklarasi Variabel dan Tipe Data
+Dalam bahasa pemrograman Go, variabel digunakan untuk menyimpan nilai data yang dapat diubah selama eksekusi program. Pada program pemecahan pecahan uang ini, tipe data int digunakan secara menyeluruh untuk merepresentasikan nominal uang, hasil pembagian pecahan, serta sisa perhitungan modulus
 
-#### 2. [Judul Sub-topik 2, misal: Tipe Data dan Deklarasi Variabel di Go]
-[Penjelasan sub-topik 2]
+#### 2. Operator Aritmatika (Pembagian dan Modulus)
+Operator pembagian (/) dan modulus (%) memainkan peran krusial dalam pemecahan masalah konversi nilai nominal uang. Operator pembagian bilangan bulat menghasilkan jumlah lembar atau keping pecahan tertentu, sementara operator modulus digunakan untuk menghitung sisa nominal uang yang belum dikonversi ke pecahan yang lebih kecil
 
 <!-- Tambahkan poin A, B, C, ... atau sub-topik 1, 2, 3, ... sesuai kebutuhan modul -->
 
-## Guided
+## Unguided
 
-### 1. [Nama File, misal: hello.go]
+### 1. cacahuang.go
 
 ```go
 package main
+
 import "fmt"
 
-func main(){
-    fmt.Println("Hello World!")
+func main() {
+	var uang int
+	fmt.Scan(&uang)
+
+	sepuluhRibu := uang / 10000
+	sisa := uang % 10000
+
+	limaRibu := sisa / 5000
+	sisa = sisa % 5000
+
+	seribu := sisa / 1000
+
+	total := sepuluhRibu + limaRibu + seribu
+	fmt.Println(total)
+	fmt.Println(sepuluhRibu, limaRibu, seribu)
+
 }
-```
-#### Deskripsi
-[Tuliskan ringkasan proses praktikum: apa yang dikerjakan, bagian guided dan unguided yang diimplementasikan, serta hasil yang diperoleh.]
-
-### 2. [Nama File, misal: main.go]
-
-```go
-[Tempelkan kode program di sini]
-```
-#### Deskripsi
-[Tuliskan ringkasan proses praktikum: apa yang dikerjakan, bagian guided dan unguided yang diimplementasikan, serta hasil yang diperoleh.]
-
-<!-- Tambahkan blok file/kode lain sesuai jumlah file pada soal guided -->
-
-## Unguided
-
-### 1. [nama_soal, misal: cacahuang]
-
-```go
-[Tempelkan kode program di sini, contoh: cacahuang.go]
 ```
 
 ##### Output
 <!-- Path relatif dari readme.md ke folder unguided/[nama_soal]/output.png, contoh: -->
-![Screenshot Output Unguided](https://github.com/renwxyz/alpro-11-01/blob/main/praktikum/02-bahasa-pemrograman-go/unguided/cacahuang/output.png)
+..\alpro-11-01\praktikum\02-bahasa-pemrograman-go\unguided\cacahuang\cacahuang.png
 
 
 #### Deskripsi
-[Tuliskan ringkasan proses praktikum: apa yang dikerjakan, bagian guided dan unguided yang diimplementasikan, serta hasil yang diperoleh.]
-
-### 2. [nama_soal, misal: kalkulator]
-
-```go
-[Tempelkan kode program di sini, contoh: kalkulator.go]
-```
-
-##### Output
-![Screenshot Output Unguided](unguided/[nama_soal]/output.png)
-
-#### Deskripsi
-[Tuliskan ringkasan proses praktikum: apa yang dikerjakan, bagian guided dan unguided yang diimplementasikan, serta hasil yang diperoleh.]
-
-<!-- Duplikasi blok "### [nama_soal]" sesuai jumlah folder soal di dalam unguided -->
+Praktikum ini membahas pembuatan program untuk menghitung pecahan mata uang berdasarkan total nominal uang yang diinputkan pengguna. Program menggunakan operator aritmatika pembagian bulat (/) dan sisa bagi atau modulus (%) untuk memecah total uang ke dalam pecahan nominal Rp10.000, Rp5.000, dan Rp1.000. Program kemudian menampilkan total lembar pecahan serta rincian jumlah lembar untuk masing-masing pecahan tersebut.
 
 
 ## Kesimpulan
-[Tuliskan kesimpulan yang menjawab tujuan praktikum berdasarkan hasil yang diperoleh.]
+Berdasarkan praktikum yang telah dilakukan, dapat disimpulkan bahwa:
+
+1. Bahasa pemrograman Go sangat efisien dalam memproses perhitungan matematis menggunakan tipe data int dan operator dasar.
+2. SKombinasi operator pembagian (/) dan modulus (%) sangat efektif untuk menyelesaikan masalah komputasi terstruktur seperti konversi pecahan nilai mata uang.
+3. Alur logika program yang runtut dari pembacaan input, proses kalkulasi bertahap, hingga pencetakan hasil akhir memastikan program berjalan dengan akurat dan sesuai harapan.
+
 
 ## Referensi
-1. [Nama Penulis]. ([Tahun]). *[Judul Buku/Sumber]*. [Kota]: [Penerbit]. Diakses pada [tanggal akses] melalui [tautan/DOI]
-2. [Nama Penulis]. ([Tahun]). *[Judul Buku/Sumber]*. [Kota]: [Penerbit]. Diakses pada [tanggal akses] melalui [tautan/DOI]
+1. Sumber resmi Golang https://go.dev/
+2. Jurnal modul 02 - Golang - Telkom University
+
 <!-- Tambahkan nomor referensi berikutnya sesuai kebutuhan -->
