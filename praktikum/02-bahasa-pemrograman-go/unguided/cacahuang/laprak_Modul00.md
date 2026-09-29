@@ -46,7 +46,7 @@ func main() {
 
 ##### Output
 <!-- Path relatif dari readme.md ke folder unguided/[nama_soal]/output.png, contoh: -->
-![Preview Output](praktikum/02-bahasa-pemrograman-go/unguided/cacahuang/cacahuang.png)
+![Preview Output](../cacahuang.png)
 
 
 #### Deskripsi
