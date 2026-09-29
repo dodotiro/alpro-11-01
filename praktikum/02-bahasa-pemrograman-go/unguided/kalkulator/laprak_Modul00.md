@@ -70,7 +70,7 @@ func main() {
 
 ##### Output
 <!-- Path relatif dari readme.md ke folder unguided/[nama_soal]/output.png, contoh: -->
-..\alpro-11-01\praktikum\02-bahasa-pemrograman-go\unguided\kalkulator\kalkulator.png
+![Preview Output](praktikum/02-bahasa-pemrograman-go/unguided/kalkulator/kalkulator.png)
 
 
 #### Deskripsi
