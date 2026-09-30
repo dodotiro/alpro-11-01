@@ -24,7 +24,7 @@ func main() {
 
 ##### Output
 <!-- Path relatif dari readme.md ke folder unguided/[nama_soal]/output.png, contoh: -->
-![Screenshot Output Unguided](../konversi_mil_ke_mil/konversi.png)
+![Screenshot Output Unguided](../konversi_mil_ke_km/konversi.png)
 
 #### Deskripsi
 Program membaca sebuah nilai boolean (true atau false) dari input pengguna, lalu mencetaknya kembali apa adanya. Nilai disimpan dalam variabel bool bertipe bool.
