@@ -184,5 +184,3 @@ Hasil uji:
 - Februari kabisat : 29
 
 Program keempat menerapkan penggunaan "switch case" dan dalam contohnya untuk menentukan sistem operasi (OS) Open source atau Close source.
-
-Secara keseluruhan, ketiga program berjalan sesuai dengan yang diminta soal dan menunjukkan pemahaman dalam pemilihan tipe data yang tepat untuk setiap kebutuhan, penggunaan operator aritmatika, serta pembacaan dan pencetakan nilai dari input pengguna.

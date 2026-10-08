@@ -97,5 +97,3 @@ Program pertama mempraktikkan operator sisa bagi (%) pada bilangan bulat: jumlah
 Program kedua mempraktikkan konversi satuan jarak menggunakan tipe float64 dan perkalian: jarak dalam mil dikalikan 1.6 menghasilkan jarak dalam kilometer. Dari pengujian, input 1 menghasilkan 1.6 km dan input 2 menghasilkan 3.2 km. Program ini juga menunjukkan cara memformat bilangan desimal, misalnya dengan fmt.Printf("%.1fkm", hasil) agar keluaran tepat satu angka di belakang koma.
 
 Program ketiga mempraktikkan tipe bool: nilai true atau false dibaca dengan fmt.Scan lalu dicetak kembali apa adanya, dan pengujian menunjukkan keluaran selalu sama dengan masukan.
-
-Secara keseluruhan, ketiga program berjalan sesuai dengan yang diminta soal dan menunjukkan pemahaman dalam pemilihan tipe data yang tepat untuk setiap kebutuhan, penggunaan operator aritmatika, serta pembacaan dan pencetakan nilai dari input pengguna.
