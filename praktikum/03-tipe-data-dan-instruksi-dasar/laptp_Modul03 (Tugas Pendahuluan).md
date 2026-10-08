@@ -1,5 +1,5 @@
 # <h1 align="center">Tugas Pendahuluan Modul 003 - Tipe Data dan Instruksi Dasar</h1>
-<p align="center">Nur Widodo - 109092630005O</p>
+<p align="center">Nur Widodo - 109092630005</p>
 
 ### 1. sisa_kue.go
 

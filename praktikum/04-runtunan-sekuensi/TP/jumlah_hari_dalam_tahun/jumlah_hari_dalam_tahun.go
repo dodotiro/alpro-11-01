@@ -1,21 +1,30 @@
 package main
 
+import "fmt"
+
 func main() {
-	var tahun, hari int
-	var Jan, Feb, Mar, Apr, Mei, Jun, Jul, Agu, Sep, Okt, Nov, Des string
+	var tahun int
+	var bulan string
 
-	hari := 360
-	Jan := hari / 31
-	Feb := hari / 29
-	Mar := hari / 31
-	Apr := hari / 31
-	Mei := hari / 31
-	Jun := hari / 31
-	Jul := hari / 31
-	Agu := hari / 31
-	Sep := hari / 31
-	Okt := hari / 31
-	Nov := hari / 31
-	Des := hari / 31
+	fmt.Println("Masukkan tahun: ")
+	fmt.Scan(&tahun)
+	fmt.Println("Masukkan bulan: ")
+	fmt.Scan(&bulan)
 
+	bulanKabisat := (tahun%400 == 0) || (tahun%4 == 0 && tahun%100 != 0)
+
+	switch bulan {
+	case "Jan", "Mar", "Mei", "Jul", "Agu", "Okt", "Des":
+		fmt.Println("Jumlah hari: 31")
+	case "Apr", "Jun", "Sep", "Nov":
+		fmt.Println("Jumlah hari: 30")
+	case "Feb":
+		if bulanKabisat {
+			fmt.Println("Jumlah hari: 29")
+		} else {
+			fmt.Println("Jumlah hari: 28")
+		}
+	default:
+		fmt.Println("-")
+	}
 }
