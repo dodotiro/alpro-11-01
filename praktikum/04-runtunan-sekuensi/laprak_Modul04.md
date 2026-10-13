@@ -164,6 +164,10 @@ func main() {
 }
 
 ```
+
+#### Output
+![Screenshot Output Guided](./guided/soal-3/output.png)
+
 #### Deskripsi
 Program ini membaca usia dan gaji tahunan seseorang, lalu menggunakan switch untuk menentukan klasifikasi berdasarkan rentang usia dan batas gaji. Hasilnya berupa keterangan seperti Muda sukses, Pekerja mapan, atau Perlu evaluasi finansial.
 
