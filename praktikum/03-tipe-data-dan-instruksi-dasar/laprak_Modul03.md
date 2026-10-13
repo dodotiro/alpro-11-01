@@ -1,4 +1,4 @@
-# <h1 align="center">Laporan Praktikum Modul 03 - Pengenalan Bahasa Pemrograman Go</h1>
+# <h1 align="center">Laporan Praktikum Modul 03 - Tipe Data dan Instruksi Dasarr</h1>
 <p align="center">Nur Widodo - 109092630005</p>
 
 ## Dasar Teori

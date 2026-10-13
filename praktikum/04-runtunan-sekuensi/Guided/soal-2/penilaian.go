@@ -1,40 +1,54 @@
 package main
 
 import (
-	"bufio" // Digunakan untuk membaca masukan string yang memiliki spasi
+	"bufio"
 	"fmt"
-	"os" // Menyediakan akses ke sistem operasi, dalam hal ini os.Stdin (keyboard)
+	"os"
 )
 
 func main() {
+	var pilihan int
 	var nama string
 	var nilai float64
 	var grade string
 
-	// Membuat alat pembaca (scanner) baru yang mengambil masukan dari keyboard
-	scanner := bufio.NewScanner(os.Stdin)
+	fmt.Println("============= Menu =============")
+	fmt.Println("1. Sistem penilaian")
+	fmt.Println("0. Keluar")
+	fmt.Print("Pilih opsi: ")
 
-	// Proses membaca masukan dari pengguna sampai tombol Enter ditekan
-	scanner.Scan()
+	fmt.Scanln(&pilihan)
 
-	// Mengambil teks yang baru saja dibaca dan menyimpannya ke variabel nama
-	nama = scanner.Text()
+	if pilihan == 1 {
+		fmt.Print("Masukkan nama siswa: ")
 
-	fmt.Scan(&nilai)
+		scanner := bufio.NewScanner(os.Stdin)
 
-	if nilai >= 90 && nilai <= 100 {
-		grade = "A"
-	} else if nilai >= 80 && nilai < 90 {
-		grade = "B"
-	} else if nilai >= 70 && nilai < 80 {
-		grade = "C"
-	} else if nilai >= 60 && nilai < 70 {
-		grade = "D"
+		scanner.Scan()
+
+		nama = scanner.Text()
+
+		fmt.Print("Masukkan nilai siswa: ")
+		fmt.Scanln(&nilai)
+
+		if nilai >= 90 && nilai <= 100 {
+			grade = "A"
+		} else if nilai >= 80 && nilai < 90 {
+			grade = "B"
+		} else if nilai >= 70 && nilai < 80 {
+			grade = "C"
+		} else if nilai >= 60 && nilai < 70 {
+			grade = "D"
+		} else {
+			grade = "F"
+		}
+
+		fmt.Printf("%s mendapatkan nilai %s\n", nama, grade)
+
+	} else if pilihan == 0 {
+		fmt.Println("Keluar dari program.")
+
 	} else {
-		grade = "F"
+		fmt.Println("Pilihan tidak valid.")
 	}
-
-	// %s adalah format penulisan (placeholder) untuk mencetak nilai bertipe string
-	// %s pertama akan diisi oleh variabel 'nama', %s kedua diisi oleh 'grade'
-	fmt.Printf("%s mendapatkan nilai %s\n", nama, grade)
 }

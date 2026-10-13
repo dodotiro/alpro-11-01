@@ -1,4 +1,4 @@
-# <h1 align="center">Laporan Praktikum Modul 02 - Algoritma dan Pemrograman: Variabel, Tipe Data, dan Operasi</h1>
+# <h1 align="center">Laporan Praktikum Modul 02 - Bahasa Pemrograman GO</h1>
 <p align="center">Nur Widodo - 109092630005</p>
 
 ## Dasar Teori
