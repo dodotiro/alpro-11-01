@@ -63,7 +63,7 @@ func main() {
 
 ##### Output
 <!-- Path relatif dari readme.md ke folder unguided/[nama_soal]/output.png, contoh: -->
-![Screenshot Output Unguided](/praktikum/05-perulangan-for-loop/ganjil/output.png)
+![Screenshot Output Unguided](/praktikum/05-perulangan-for-loop/TP/ganjil/output.png)
 
 #### Deskripsi
 Program ini berfungsi untuk mengetahui bilangan ganjil dari bilangan yang di inputkan atau dari 1 sampai n menggunakan for.
@@ -87,7 +87,7 @@ func main() {
 
 ##### Output
 <!-- Path relatif dari readme.md ke folder unguided/[nama_soal]/output.png, contoh: -->
-![Screenshot Output Unguided](/praktikum/05-perulangan-for-loop/perkalian/output.png)
+![Screenshot Output Unguided](/praktikum/05-perulangan-for-loop/TP/perkalian/output.png)
 
 #### Deskripsi
 Program ini berfungsi sebagai kalkulator perkalian menggunakan for dan hasil perkalian di tulis semua dalam output.
